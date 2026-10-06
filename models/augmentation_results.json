@@ -1,0 +1,17 @@
+{
+    "Baseline": {
+        "test_accuracy": 0.994700014591217,
+        "test_loss": 0.018648436293005943,
+        "epochs": 6
+    },
+    "Dropout": {
+        "test_accuracy": 0.9956499934196472,
+        "test_loss": 0.015914423391222954,
+        "epochs": 8
+    },
+    "Dropout + Augmentation": {
+        "test_accuracy": 0.9941999912261963,
+        "test_loss": 0.0205044224858284,
+        "epochs": 10
+    }
+}

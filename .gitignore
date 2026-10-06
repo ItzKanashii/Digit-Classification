@@ -1,0 +1,30 @@
+# Python environments and cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local IDE and OS files
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local data and generated artifacts
+data/raw/*.mat
+data/survey/*.npz
+models/*.keras
+outputs/
+
+# Generated project report and local LaTeX source
+/reports/*.pdf
+/reports/*.tex
+/reports/*.aux
+/reports/*.log
+/reports/*.out
+/reports/*.toc
+/reports/*.fls
+/reports/*.fdb_latexmk
+/reports/*.synctex.gz

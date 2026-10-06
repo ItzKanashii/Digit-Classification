@@ -1,0 +1,95 @@
+{
+  "model": "cnn_writer_independent.keras",
+  "test_split_note": "Supplied test writers overlap with original training writers; stress test is descriptive.",
+  "corruptions": {
+    "clean": {
+      "accuracy": 0.99545,
+      "loss": 0.015702246829867362,
+      "correct": 39818,
+      "total": 40000
+    },
+    "rotation_3deg": {
+      "accuracy": 0.99525,
+      "loss": 0.016007889060676097,
+      "correct": 39810,
+      "total": 40000
+    },
+    "rotation_6deg": {
+      "accuracy": 0.99515,
+      "loss": 0.01635100100785494,
+      "correct": 39806,
+      "total": 40000
+    },
+    "rotation_10deg": {
+      "accuracy": 0.9946,
+      "loss": 0.01853899548649788,
+      "correct": 39784,
+      "total": 40000
+    },
+    "translation_1px": {
+      "accuracy": 0.994175,
+      "loss": 0.018725569367408754,
+      "correct": 39767,
+      "total": 40000
+    },
+    "translation_2px": {
+      "accuracy": 0.990575,
+      "loss": 0.03323883842825889,
+      "correct": 39623,
+      "total": 40000
+    },
+    "translation_3px": {
+      "accuracy": 0.97455,
+      "loss": 0.09023271112442016,
+      "correct": 38982,
+      "total": 40000
+    },
+    "noise_0.05": {
+      "accuracy": 0.995025,
+      "loss": 0.016802001994848253,
+      "correct": 39801,
+      "total": 40000
+    },
+    "noise_0.10": {
+      "accuracy": 0.9937,
+      "loss": 0.020786287266016005,
+      "correct": 39748,
+      "total": 40000
+    },
+    "noise_0.20": {
+      "accuracy": 0.95965,
+      "loss": 0.1297829529762268,
+      "correct": 38386,
+      "total": 40000
+    }
+  },
+  "high_severity_summary": [
+    {
+      "corruption": "Gaussian noise",
+      "clean_accuracy": 0.99545,
+      "high_severity_accuracy": 0.95965,
+      "accuracy_drop_percentage_points": 3.5799999999999943,
+      "clean_loss": 0.015702246829867362,
+      "high_severity_loss": 0.1297829529762268,
+      "loss_increase": 0.11408070614635944
+    },
+    {
+      "corruption": "Rotation",
+      "clean_accuracy": 0.99545,
+      "high_severity_accuracy": 0.9946,
+      "accuracy_drop_percentage_points": 0.08499999999999064,
+      "clean_loss": 0.015702246829867362,
+      "high_severity_loss": 0.01853899548649788,
+      "loss_increase": 0.0028367486566305174
+    },
+    {
+      "corruption": "Translation",
+      "clean_accuracy": 0.99545,
+      "high_severity_accuracy": 0.97455,
+      "accuracy_drop_percentage_points": 2.089999999999992,
+      "clean_loss": 0.015702246829867362,
+      "high_severity_loss": 0.09023271112442016,
+      "loss_increase": 0.0745304642945528
+    }
+  ]
+}
